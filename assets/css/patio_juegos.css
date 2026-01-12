@@ -1,0 +1,32 @@
+body #container {
+    height: 100dvh;
+    width: 100%;
+    gap: 0;
+    justify-content: center;
+    margin: 0;
+}
+
+body #container .draggables {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: flex;
+    top: 0;
+    overflow: scroll;
+    scrollbar-width: none;
+    height: 80vh;
+    width: 100%;
+} 
+
+body #container .draggables img {
+    height: 25%;
+    width: auto;
+    object-fit: cover;
+}
+
+body #container span{
+    font-family: 'Mermaid', 'Times New Roman', Times, serif;
+    font-size: 6rem;
+    position: absolute;
+    top: 50%;
+    margin: 2%;
+}

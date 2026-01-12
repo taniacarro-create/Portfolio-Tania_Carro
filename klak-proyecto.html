@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Klak - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/imagenes/favicon@2x.png">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/pag-proyectos.css">
+    <link rel="stylesheet" href="assets/fonts/mermaid swash caps/mermaid_swash.css">
+    <link rel="stylesheet" href="assets/fonts/mermaid/mermaid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="index.html" class="headerLeft">Tania</a>
+            <div class="headerRight">
+                <a href="about.html">Sobre mí</a>
+                <a class="active" href="index.html#proyectos">Proyectos</a>
+                <a href="patio_de_juegos.html">Patio de juegos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="intro" class="intro"> <!-- CARGADO DEL JSON -->
+            
+        </section>
+
+        <section class="galeria_mobile">
+                <img src="assets/imagenes/proyecto_klak/leche_mockup.jpg" alt="Varias tabletas de chocolate, algunas no tienen el envoltorio, las que lo tienen muestran el envoltorio de Klak, con un color lila suave de base, letras con la tipografía Chulapa y dibujos al estilo vintage de semillas de cacao">
+                <img src="assets/imagenes/proyecto_klak/Business_Card_Mockup_3 copia.jpg" alt="Tarjetas de contacto, en una de ellas se ve el logo y el eslogan de Klak: 'Sabor sostenible. Elaborado en España'. En la otra se lee la información de contacto.">
+                <img src="assets/imagenes/proyecto_klak/vegano-negro_mockup.jpg" alt="Varias tabletas de chocolate, algunas no tienen el envoltorio, las que lo tienen muestran el dos tipos de envoltorio de Klak diferentes: un color morado oscuro denota el chocolate negro; y el verde el chocolate vegano. En ambas versiones aparecen letras con la tipografía Chulapa y dibujos al estilo vintage de semillas de cacao">
+                <img src="assets/imagenes/proyecto_klak/laminas clase.jpg" alt="Lámina con especificaciones técnicas del logo: colores usados, distancias, pruebas de color...">
+                <img src="assets/imagenes/proyecto_klak/klak-instagram_mockup.jpg" alt="Una pantalla de móvil en las que se ve cómo sería el perfil de Instagram de Klak">
+        </section>
+
+        <section class="galeria" id="galeria">
+            <div class="fotos">
+                <img src="assets/imagenes/proyecto_klak/leche_mockup.jpg" alt="Varias tabletas de chocolate, algunas no tienen el envoltorio, las que lo tienen muestran el envoltorio de Klak, con un color lila suave de base, letras con la tipografía Chulapa y dibujos al estilo vintage de semillas de cacao">
+                <img src="assets/imagenes/proyecto_klak/Business_Card_Mockup_3 copia.jpg" alt="Tarjetas de contacto, en una de ellas se ve el logo y el eslogan de Klak: 'Sabor sostenible. Elaborado en España'. En la otra se lee la información de contacto.">
+                <img src="assets/imagenes/proyecto_klak/vegano-negro_mockup.jpg" alt="Varias tabletas de chocolate, algunas no tienen el envoltorio, las que lo tienen muestran el dos tipos de envoltorio de Klak diferentes: un color morado oscuro denota el chocolate negro; y el verde el chocolate vegano. En ambas versiones aparecen letras con la tipografía Chulapa y dibujos al estilo vintage de semillas de cacao">
+                <img src="assets/imagenes/proyecto_klak/laminas clase.jpg" alt="Lámina con especificaciones técnicas del logo: colores usados, distancias, pruebas de color...">
+                <img src="assets/imagenes/proyecto_klak/klak-instagram_mockup.jpg" alt="Una pantalla de móvil en las que se ve cómo sería el perfil de Instagram de Klak">
+            </div>
+        </section>
+
+        <section class="fecha" id="fecha">
+            <p>Proyecto realizado en 2024.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Hecho por Tania Carro© en 2025.
+        </p>
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+    <!-- tailwindcss CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="assets/javascript/pag-proyectos.js"></script>
+
+    <!-- JSON -->
+			<script>
+				fetch('/assets/javascript/proyectos.json') //aquí va la ruta a nuestro archivo
+					.then(response => response.json()) //convertimos la respuesta 
+					.then(data => cargarDatos(data[2]));  //CAMBIAR NUMERO PARA NUEVOS PROYECTOS
+			</script>
+
+</body>
+
+</html>

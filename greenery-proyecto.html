@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greenery - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/imagenes/favicon@2x.png">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/pag-proyectos.css">
+    <link rel="stylesheet" href="assets/fonts/mermaid swash caps/mermaid_swash.css">
+    <link rel="stylesheet" href="assets/fonts/mermaid/mermaid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="index.html" class="headerLeft">Tania</a>
+            <div class="headerRight">
+                <a href="about.html">Sobre mí</a>
+                <a class="active" href="index.html#proyectos">Proyectos</a>
+                <a href="patio_de_juegos.html">Patio de juegos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="intro" class="intro"> <!-- CARGADO DEL JSON -->
+        </section>
+
+        <section class="model">
+            <model-viewer alt="" src="assets/imagenes/proyecto_greenery/3dmuebles2.glb" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+            <model-viewer alt="" src="assets/imagenes/proyecto_greenery/3dmuebles2.glb" shadow-intensity="1" camera-controls touch-action="pan-y"></model-viewer>
+        </section>
+
+        <section class="galeria_mobile">
+                <img src="assets/imagenes/proyecto_greenery/lámina 2.jpg" alt="Render 3D de una mesa con forma de nenúfar de cristal verde rodeada de 4 sillas también de cristal verde con un cojín en forma de nenúfar en el asiento">
+                <img src="assets/imagenes/proyecto_greenery/plano_mesa.jpg" alt="Planos de la mesa con forma de nenúfar con las medidas.">
+                <img src="assets/imagenes/proyecto_greenery/gif silla recort.gif" alt="Imagen en movimiento del montaje de la silla.">
+                <img src="assets/imagenes/proyecto_greenery/greenery-instagram.jpg" alt="Cuatro pantallas de móvil en las que se ven cómo sería el perfil de Instagram de Greenery">
+        </section>
+
+        <section class="galeria" id="galeria">
+            <div class="fotos">
+                <img src="assets/imagenes/proyecto_greenery/lámina 2.jpg" alt="Render 3D de una mesa con forma de nenúfar de cristal verde rodeada de 4 sillas también de cristal verde con un cojín en forma de nenúfar en el asiento">
+                <img src="assets/imagenes/proyecto_greenery/plano_mesa.jpg" alt="Planos de la mesa con forma de nenúfar con las medidas.">
+                <img src="assets/imagenes/proyecto_greenery/gif silla recort.gif" alt="Imagen en movimiento del montaje de la silla.">
+                <img src="assets/imagenes/proyecto_greenery/greenery-instagram.jpg" alt="Cuatro pantallas de móvil en las que se ven cómo sería el perfil de Instagram de Greenery">
+            </div>
+        </section>
+
+        <section class="fecha" id="fecha">
+            <p>Proyecto realizado en 2024.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Hecho por Tania Carro© en 2025.
+        </p>
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+    <!-- tailwindcss CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="assets/javascript/pag-proyectos.js"></script>
+
+     <!-- Import the component MODEL VIEWER-->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+
+    <!-- JSON -->
+    <script>
+        fetch('/assets/javascript/proyectos.json') //aquí va la ruta a nuestro archivo
+            .then(response => response.json()) //convertimos la respuesta 
+            .then(data => cargarDatos(data[3]));  //CAMBIAR NUMERO PARA NUEVOS PROYECTOS
+    </script>
+
+</body>
+
+</html>

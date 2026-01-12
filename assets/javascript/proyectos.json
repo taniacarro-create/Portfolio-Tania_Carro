@@ -1,0 +1,32 @@
+[
+    {
+        "titulo": "Checkpoint",
+        "titulo2": " ",
+        "subtitulo": "Proyecto académico. <br> Diseño de identidad gráfica y UI/UX.",
+        "descripcion":"Check Point pretende ser el LetterBox de los videojuegos: una aplicación donde recopilar juegos de todas las plataformas que has jugado o quieres jugar, ver reseñas de otros jugadores, hacer las tuyas, recibir noticias que te interesan y más. <br><br> La aplicación está dirigida a un público que ya controla la tecnología, los <i>gamers</i>, por lo que toda la estética se basa en <b>interfaces limpias</b>, con toques de color morado eléctrico, intentando que la aplicación fuera lo más intuitiva posible usando métodos como el <i>card sorting</i> en las fases previas al diseño de la app.<br><br> Este proyecto contó con cinco fases: estrategia, alcance (propuesta final), estructura, wireframes y el diseño final. Yo me encargué de la estructura y <i>wireframes</i> al completo y participé en gran medida en el diseño final.<b> En el proceso se usó Illustrator y Figma.</b><br><br> Realizado en colaboración con Mariel Díez Calleja y Kaoru Soto Ueno."
+    },
+    {
+        "titulo": "Cooking",
+        "titulo2": "Box",
+        "subtitulo": "Proyecto académico. <br> Diseño de identidad gráfica, packaging y web.",
+        "descripcion": "Cooking Box es un servicio que busca ofrecer <b>comidas saludables y sencillas</b> a personas jóvenes que no tienen el tiempo ni la energía necesarios para ponerse a cocinar cada día o ir a buscar los ingredientes necesarios.<br><br> El servicio funcionaría personalizando tu pedido a través de la página web, para que posteriormente te llegaran ingredientes y recetas a la puerta de tu casa o a donde se desee. En estas cajas se usarían ingredientes de temporada y de cercanía.<br><br> La propuesta se centra en transmitir lo <b>orgánico, natural y saludable</b>. Al estar principalmente dirigida a jóvenes, contábamos también con un público conocedor de las tecnologías, pero la web es sencilla e intuitiva igualmente.<br><br> Este proyecto constó de dos partes: la identidad gráfica, usando <b>Illustrator</b>, fue hecha en conjunto con Mariel Díez Calleja y la creación de una página web, de la cual yo fui la autora en su totalidad con el uso de <b>Wix</b>."
+    },
+    {
+        "titulo": "Klak",
+        "titulo2": " ",
+        "subtitulo": "Proyecto académico. <br> Diseño de identidad gráfica y packaging.",
+        "descripcion": "KLAK (o Klak) es una marca especializada en <b>chocolates artesanales</b> creada en España, con una fábrica pequeña, se centra en comercializar sus productos en tiendas más bien <i>gourmets</i>.<br><br> Pretende transmitir <b>sostenibilidad</b>, un producto cuidado, jovialidad.<br><br> La propuesta presentada aquí es una referencia a packagings <b>vintage</b>, referenciando “los viejos tiempos, cuando las cosas se hacían a mano y con cuidado”. Se realizaron tres diseños: el básico de chocolate con leche, el de chocolate negro y el de chocolate vegano.<br><br> Este fue un proyecto individual que se realizó usando <b>Illustrator y Photoshop</b>."
+    },
+    {
+        "titulo": "Greenery",
+        "titulo2": " ",
+        "subtitulo": "Proyecto académico. <br> Diseño de objeto, identidad de marca, modelado 3D.",
+        "descripcion": "<i>Greenery</i> nace de un proyecto para amueblar una cafetería, en concreto la de la Facultad de Bellas Artes de la UCM.<br><br> La propuesta se centra en traer <b>el exterior al interior</b>, usando como inspiración la naturaleza, en concreto, los nenúfares. El objetivo de Greenery es mejorar la experiencia del usuario, convirtiendo los momentos sociales y de descanso en situaciones de relajación y reconexión con <b>elementos naturales y formas orgánicas</b> integradas en el mobiliario, contribuyendo así a reducir los niveles de estrés de los usuarios.<br><br> La mesa presenta una característica forma circular que facilita <b>la comunicación</b> entre las personas, permite que todos se sienten a la misma distancia de manera equitativa. El respaldo acolchado y el cojín de la silla dan un extra de comodidad.<br><br> Este proyecto fue realizado junto a Mariel Díez Calleja, habiendo usado <b>Photoshop, Illustrator, 3dsMax y AutoCad</b> para su realización. Los planos y modelos 3D fueron obra mía."
+    },
+    {
+        "titulo": "Lost in the",
+        "titulo2": "Woods",
+        "subtitulo": "Proyecto académico. <br> Diseño web.",
+        "descripcion": "<i>Lost in the Woods</i> es una web que cuenta una <b>historia interactiva</b> a modo “crea tu propia aventura”.<br><br> Los usuarios van leyendo la historia y tomando <b>decisiones</b> que les llevará a un buen o mal final.<br><br> La propuesta se centra en transmitir la oscuridad con intención de meter en el ambiente a aquel que lea la historia, usando tipografías tipo máquina de escribir, monoespaciadas, para recordar a los libros. La web es completamente responsive, funcionando en ordenadores, móviles y tablets sin problema.<br><br> El <b>HTML y CSS</b> de la web fue programado por mí en su totalidad, usando <b>Adobe DreamWeaver</b>, y se utilizó JavaScript de terceros. Las ilustraciones de los GIF’s también fueron creadas por mí en <b>Photoshop</b>."
+    } 
+]

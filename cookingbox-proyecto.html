@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cooking Box - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/imagenes/favicon@2x.png">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/pag-proyectos.css">
+    <link rel="stylesheet" href="assets/fonts/mermaid swash caps/mermaid_swash.css">
+    <link rel="stylesheet" href="assets/fonts/mermaid/mermaid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="index.html" class="headerLeft">Tania</a>
+            <div class="headerRight">
+                <a href="about.html">Sobre mí</a>
+                <a class="active" href="index.html#proyectos">Proyectos</a>
+                <a href="patio_de_juegos.html">Patio de juegos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="intro" class="intro"> <!-- CARGADO DEL JSON -->
+            
+        </section>
+
+        <section class="web">
+            <a style="color: #78932A;" href="https://tancarro.wixsite.com/cooking-box">Haz click aquí para ver la web de Cooking Box.</a>
+        </section>
+        
+        <section class="galeria_mobile">
+                <img src="assets/imagenes/proyecto_cookingbox/caja.jpg" alt="Caja de cartón con el logo de Cooking Box sobre un fondo verde.">
+                <img src="assets/imagenes/proyecto_cookingbox/archivador.jpg" alt="Archivador verde con dibujos vectoriales de verduras con el título TUS RECETAS en la cubierta.">
+                <img src="assets/imagenes/proyecto_cookingbox/Cooking Box logo SÍ.jpg" alt="Las variantes del logo de Cooking Box (relleno, relleno oscuro, sólo línea) sobre diferentes colores de la marca">
+                <img src="assets/imagenes/proyecto_cookingbox/3 copia.jpg" alt="Dos ordenadores en los que se pueden ver distintas pestañas de la página web de Cooking Box">
+                <img src="assets/imagenes/proyecto_cookingbox/mockup pegatinas.jpg" alt="Varias pegatinas, algunas tienen el logo de Cooking Box y otras tienen un dibujo vectorial de una caja de la que salen volando verduras">
+        </section>
+
+        <section class="galeria" id="galeria">
+            <div class="fotos">
+                <img src="assets/imagenes/proyecto_cookingbox/caja.jpg" alt="Caja de cartón con el logo de Cooking Box sobre un fondo verde.">
+                <img src="assets/imagenes/proyecto_cookingbox/archivador.jpg" alt="Archivador verde con dibujos vectoriales de verduras con el título TUS RECETAS en la cubierta.">
+                <img src="assets/imagenes/proyecto_cookingbox/Cooking Box logo SÍ.jpg" alt="Las variantes del logo de Cooking Box (relleno, relleno oscuro, sólo línea) sobre diferentes colores de la marca">
+                <img src="assets/imagenes/proyecto_cookingbox/3 copia.jpg" alt="Dos ordenadores en los que se pueden ver distintas pestañas de la página web de Cooking Box">
+                <img src="assets/imagenes/proyecto_cookingbox/mockup pegatinas.jpg" alt="Varias pegatinas, algunas tienen el logo de Cooking Box y otras tienen un dibujo vectorial de una caja de la que salen volando verduras">
+            </div>
+        </section>
+
+        <section class="fecha" id="fecha">
+            <p>Proyecto realizado en 2024.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Hecho por Tania Carro© en 2025.
+        </p>
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+    <!-- tailwindcss CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="assets/javascript/pag-proyectos.js"></script>
+
+    <!-- JSON -->
+			<script>
+				fetch('/assets/javascript/proyectos.json') //aquí va la ruta a nuestro archivo
+					.then(response => response.json()) //convertimos la respuesta 
+					.then(data => cargarDatos(data[1]));  //CAMBIAR NUMERO PARA NUEVOS PROYECTOS
+			</script>
+
+</body>
+
+</html>

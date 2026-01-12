@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'Mermaid Swash Caps';
+    src: url('MermaidSwashCaps-Bold.eot');
+    src: url('MermaidSwashCaps-Bold.eot?#iefix') format('embedded-opentype'),
+        url('MermaidSwashCaps-Bold.woff') format('woff'),
+        url('MermaidSwashCaps-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Mermaid Swash Caps';
+    src: url('MermaidSwashCaps-Bold_1.eot');
+    src: url('MermaidSwashCaps-Bold_1.eot?#iefix') format('embedded-opentype'),
+        url('MermaidSwashCaps-Bold_1.woff') format('woff'),
+        url('MermaidSwashCaps-Bold_1.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

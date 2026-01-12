@@ -1,0 +1,130 @@
+@charset 'utf-8';
+
+/* TRANSFONTER para usar y enlazar fonts customs*/
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 10dvh 1fr 20dvh;
+    font-family: 'Anybody', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #343434;
+    width: 100%;
+}
+
+/* HEADER */
+body nav {
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #BBE7FF;
+
+    font-family: 'Anybody', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+body nav div {
+    padding: 10px;
+    width: 90%;
+    justify-self: center;
+    justify-content: center;
+    display: flex;
+}
+
+body nav div a {
+    color: #343434;
+    text-decoration: none;
+}
+
+body nav div .headerLeft {
+    font-family: 'Mermaid Swash Caps', 'Times New Roman', Times, serif;
+    font-size: 2rem;
+}
+
+body nav div .headerRight {
+    justify-content: right;
+    justify-self: right;
+    gap: 5%;
+}
+
+body nav div .headerRight .active{
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
+/* MAIN */
+body main {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1%;
+    grid-row-gap: 0;
+    margin-top: 5%;
+}
+
+body footer {
+    grid-row-start: 3;
+    background-color: #343434;
+    display: flex;
+    padding: 5%;
+}
+
+body footer p {
+    color: #BBE7FF;
+}
+
+
+@media screen and (max-width: 820px) {
+
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-rows: 5dvh 1fr 20dvh;
+        font-family: 'Anybody', Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: #343434;
+        width: 100%;
+    }
+
+    body main {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 1%;
+        grid-row-gap: 0;
+        margin-top: 5%;
+    }
+
+    body footer {
+        padding-left: 10%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+
+    body {
+        margin: 0;
+        display: grid;
+        grid-template-rows: 10dvh 1fr 10dvh;
+        font-family: 'Anybody', Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: #343434;
+        width: 100%;
+    }
+
+    body main {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+
+}
+
+
+@counter-style star {
+    system: cyclic;
+    symbols: "✦";
+    suffix: " "
+}

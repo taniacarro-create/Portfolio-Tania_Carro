@@ -1,0 +1,175 @@
+/* MAIN */
+
+body main .hola {
+    grid-column-start: 2;
+    grid-column-end: -1;
+    position: relative;
+    height: 100vh;
+}
+
+body main .hola h1 {
+    font-size: 8rem;
+    text-align: right;
+    font-family: 'Mermaid Swash Caps', 'Times New Roman', Times, serif;
+    width: 50%;
+}
+
+body main .decoracion {
+    max-width: 100dvw;
+    justify-self: left;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+body main .proyectos {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 2%;
+
+    background-color: #BBE7FF;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+body main .proyectos h2 {
+    grid-row-start: 1;
+    font-size: 5rem;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+    margin: 2%;
+    font-family: 'Mermaid', 'Times New Roman', Times, serif;
+}
+
+body main .proyectos .galeria_landing {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    grid-template-rows: repeat(2, 50%);
+    grid-gap: 2%;
+    margin-bottom: 10%;
+
+}
+
+body main .proyectos .galeria_landing > article {
+    transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -webkit-transition: opacity .3s ease-in-out;
+}
+
+body main .proyectos .galeria_landing > article:hover{
+    opacity: 0.8;
+}
+
+body main .proyectos div article img {
+    height: 100%;
+    width: 100%;
+    border-radius: 40px;
+    object-fit: cover;
+}
+
+body main .proyectos div .img_1 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+body main .proyectos div .img_2 {
+    grid-column-start: 4;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+body main .proyectos div .img_3 {
+    grid-column-start: 9;
+    grid-column-end: 11;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    max-width: 100%;
+}
+
+body main .proyectos div .img_4 {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+body main .proyectos div .img_5 {
+    grid-column-start: 7;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+@media screen and (max-width: 820px) {
+    body main .hola {
+        height: 80vh;
+    }
+
+    body main .hola h1 {
+        font-size: 5rem;
+        width: 60%;
+    }
+
+    body main .proyectos h2 {
+        font-size: 2.5rem;
+        justify-self: center;
+        text-align: center;
+        margin: 2%;
+    }
+}
+
+
+
+@media screen and (max-width: 430px) {
+    
+    body main .hola {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    position: relative;
+    height: 40vh;
+    }
+
+    body main .hola h1 {
+        font-size: 4rem;
+        width: 80%;
+        justify-self: left;
+    }
+
+    body main .decoracion {
+    max-width: 100%;
+    justify-self: left;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+body main .proyectos {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 2%;
+
+    background-color: #BBE7FF;
+    max-width: 100%;
+    min-height: 0;
+}
+
+    body main .proyectos h2 {
+        font-size: 2rem;
+        text-align: center;
+        justify-self: center;
+        margin: 2%;
+    }
+
+    body main .proyectos div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40%;
+    padding: 5%;
+}
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkpoint - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/imagenes/favicon@2x.png">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/pag-proyectos.css">
+    <link rel="stylesheet" href="assets/fonts/mermaid swash caps/mermaid_swash.css">
+    <link rel="stylesheet" href="assets/fonts/mermaid/mermaid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="index.html" class="headerLeft">Tania</a>
+            <div class="headerRight">
+                <a href="about.html">Sobre mí</a>
+                <a class="active" href="index.html#proyectos">Proyectos</a>
+                <a href="patio_de_juegos.html">Patio de juegos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="intro" class="intro"> <!-- CARGADO DEL JSON -->
+            
+        </section>
+
+        <section class="web">
+            <a style="color: #6C63FF;" href="https://www.figma.com/proto/ncnyEc9Vob79nqe99OVm90/05_Wireframe---Mockups---Prototipado?node-id=2167-5242&p=f&t=MGZc3x5IF5GirM2a-0&scaling=scale-down&content-scaling=fixed&page-id=2002%3A910&starting-point-node-id=2167%3A5242">Haz click aquí para ver el prototipo de Checkpoint.</a>
+        </section>
+
+        <section class="galeria_mobile">
+                <img src="assets/imagenes/proyectos_checkpoint/Phones Mockup Bundle-copia.jpg" alt="Conjunto de móviles boca arriba en cuyas pantallas se ven diferentes pantallas de la aplicación Checkpoint, con una disposición similar a la de LetterBox, pero con fondo blanco y un morado eléctricoo de color acento. Se ven distintos videojuegos. ">
+                <img src="assets/imagenes/proyectos_checkpoint/Phones Mockup Bundle-copia2.jpg" alt="Conjunto de móviles boca arriba en cuyas pantallas se ven diferentes pantallas de la aplicación Checkpoint, con una disposición similar a la de LetterBox, pero con fondo blanco y un morado eléctricoo de color acento. Se ven distintos videojuegos. ">
+                <img src="assets/imagenes/proyectos_checkpoint/Phones Mockup Bundle-copia3.jpg" alt="Conjunto de móviles boca arriba en cuyas pantallas se ven diferentes pantallas de la aplicación Checkpoint, con una disposición similar a la de LetterBox, pero con fondo blanco y un morado eléctricoo de color acento. Se ven distintos videojuegos. ">
+        </section>
+
+        <section class="galeria" id="galeria">
+            <div class="fotos">
+                <img src="assets/imagenes/proyectos_checkpoint/Phones Mockup Bundle-copia.jpg" alt="Conjunto de móviles boca arriba en cuyas pantallas se ven diferentes pantallas de la aplicación Checkpoint, con una disposición similar a la de LetterBox, pero con fondo blanco y un morado eléctricoo de color acento. Se ven distintos videojuegos. ">
+                <img src="assets/imagenes/proyectos_checkpoint/Phones Mockup Bundle-copia2.jpg" alt="Conjunto de móviles boca arriba en cuyas pantallas se ven diferentes pantallas de la aplicación Checkpoint, con una disposición similar a la de LetterBox, pero con fondo blanco y un morado eléctricoo de color acento. Se ven distintos videojuegos. ">
+                <img src="assets/imagenes/proyectos_checkpoint/Phones Mockup Bundle-copia3.jpg" alt="Conjunto de móviles boca arriba en cuyas pantallas se ven diferentes pantallas de la aplicación Checkpoint, con una disposición similar a la de LetterBox, pero con fondo blanco y un morado eléctricoo de color acento. Se ven distintos videojuegos. ">
+            </div>
+        </section>
+
+        <section class="fecha" id="fecha">
+            <p>Proyecto realizado en 2025.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Hecho por Tania Carro© en 2025.
+        </p>
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+    <!-- tailwindcss CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="assets/javascript/pag-proyectos.js"></script>
+
+    <!-- JSON -->
+			<script>
+				fetch('/assets/javascript/proyectos.json') //aquí va la ruta a nuestro archivo
+					.then(response => response.json()) //convertimos la respuesta 
+					.then(data => cargarDatos(data[0]));  //CAMBIAR NUMERO PARA NUEVOS PROYECTOS
+			</script>
+
+</body>
+
+</html>

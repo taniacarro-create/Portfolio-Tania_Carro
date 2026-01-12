@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lost in the Woods - Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="assets/imagenes/favicon@2x.png">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/pag-proyectos.css">
+    <link rel="stylesheet" href="assets/fonts/mermaid swash caps/mermaid_swash.css">
+    <link rel="stylesheet" href="assets/fonts/mermaid/mermaid.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <a href="index.html" class="headerLeft">Tania</a>
+            <div class="headerRight">
+                <a href="about.html">Sobre mí</a>
+                <a class="active" href="index.html#proyectos">Proyectos</a>
+                <a href="patio_de_juegos.html">Patio de juegos</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section id="intro" class="intro"> <!-- CARGADO DEL JSON -->
+            
+        </section>
+
+        <section class="web">
+            <a href="https://lostinthewoodscyoa.netlify.app/" style="color: #343434;">Haz click aquí para ver empezar tu aventura.</a>
+        </section>
+        
+        <section class="galeria_mobile">
+                <img src="assets/imagenes/proyecto_litw/laptop_web.jpg" alt="Portátil en el que se ve una de las pantallas de la web Lost in the Woods: un dibujo de una cobra seguido de un párrafo de texto, ambos en blanco sobre un fondo negro.">
+                <img src="assets/imagenes/proyecto_litw/lamina-litw.jpg" alt="Lámina con especificaciones como los códigos de color de la web, la tipografía usada, algunos dibujos y un mockup de cómo se ve la pantalla inicial en el móvil.">
+                <img style="background-color: black;" src="assets/imagenes/proyecto_litw/cobra.gif" alt="Dibujo de una cobra en blanco sobre negro, es un gif (imagen en movimiento) por lo que hay una pequeña animación en la que cambian sutilmente los trazos.">
+                <img src="assets/imagenes/proyecto_litw/tablet_litw.png" alt="Tablet en el que se ve una de las pantallas de la web Lost in the Woods: un dibujo de un pie con el hueso roto seguido de un párrafo de texto, ambos en blanco sobre un fondo negro.">
+                <img src="assets/imagenes/proyecto_litw/movil_web.png" alt="Móvil en el que se ve una de las pantallas de la web Lost in the Woods: un dibujo de una cascada seguido de un párrafo de texto, ambos en blanco sobre un fondo negro.">
+        </section>
+
+        <section class="galeria" id="galeria">
+            <div class="fotos">
+                <img src="assets/imagenes/proyecto_litw/laptop_web.jpg" alt="Portátil en el que se ve una de las pantallas de la web Lost in the Woods: un dibujo de una cobra seguido de un párrafo de texto, ambos en blanco sobre un fondo negro.">
+                <img src="assets/imagenes/proyecto_litw/lamina-litw.jpg" alt="Lámina con especificaciones como los códigos de color de la web, la tipografía usada, algunos dibujos y un mockup de cómo se ve la pantalla inicial en el móvil.">
+                <img style="background-color: black;" src="assets/imagenes/proyecto_litw/cobra.gif" alt="Dibujo de una cobra en blanco sobre negro, es un gif (imagen en movimiento) por lo que hay una pequeña animación en la que cambian sutilmente los trazos.">
+                <img src="assets/imagenes/proyecto_litw/tablet_litw.png" alt="Tablet en el que se ve una de las pantallas de la web Lost in the Woods: un dibujo de un pie con el hueso roto seguido de un párrafo de texto, ambos en blanco sobre un fondo negro.">
+                <img src="assets/imagenes/proyecto_litw/movil_web.png" alt="Móvil en el que se ve una de las pantallas de la web Lost in the Woods: un dibujo de una cascada seguido de un párrafo de texto, ambos en blanco sobre un fondo negro.">
+            </div>
+        </section>
+
+        <section class="fecha" id="fecha">
+            <p>Proyecto realizado en 2024.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            Hecho por Tania Carro© en 2025.
+        </p>
+    </footer>
+
+
+
+    <!-- JAVASCRIPT -->
+    <!-- tailwindcss CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- ScrollTrigger CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="assets/javascript/pag-proyectos.js"></script>
+
+    <!-- JSON -->
+			<script>
+				fetch('/assets/javascript/proyectos.json') //aquí va la ruta a nuestro archivo
+					.then(response => response.json()) //convertimos la respuesta 
+					.then(data => cargarDatos(data[4]));  //CAMBIAR NUMERO PARA NUEVOS PROYECTOS
+			</script>
+
+</body>
+
+</html>

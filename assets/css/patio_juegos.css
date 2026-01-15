@@ -30,3 +30,15 @@ body #container span{
     top: 50%;
     margin: 2%;
 }
+
+@media screen and (max-width: 430px) {
+    body #container span{
+    font-family: 'Mermaid', 'Times New Roman', Times, serif;
+    line-height: 100%;
+    font-size: 5rem;
+    position: absolute;
+    top: 50%;
+    padding: 5%;
+    margin: 0;
+}
+}

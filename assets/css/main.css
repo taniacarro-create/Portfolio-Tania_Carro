@@ -13,7 +13,7 @@ body {
 }
 
 /* HEADER */
-body nav {
+body .mainNav {
     grid-row-start: 1;
     grid-row-end: 2;
     background-color: #BBE7FF;
@@ -51,9 +51,13 @@ body nav div .headerRight {
     gap: 5%;
 }
 
-body nav div .headerRight .active{
+body nav div .headerRight .active {
     text-decoration: underline;
     text-decoration-style: wavy;
+}
+
+body .mobileNav {
+    display: none;
 }
 
 /* MAIN */
@@ -120,6 +124,68 @@ body footer p {
         margin-top: 5%;
     }
 
+    body .mainNav {
+        display: none;
+    }
+
+    body .mobileNav {
+        grid-row-start: 1;
+        grid-row-end: 2;
+        background-color: #BBE7FF;
+
+        font-family: 'Anybody', Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 0;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    body .mobileNav .header {
+        width: 100%;
+        display: flex;
+        justify-self: center;
+        justify-content: center;
+        align-items: center;
+        gap: 70%;
+        padding: 0;
+    }
+
+    body .mainNav .header span {
+        justify-self: right;
+        justify-content: center;
+        align-self: center;
+    }
+
+    body .mobileNav .header .logo {
+        font-family: 'Mermaid Swash Caps', 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        align-self: left;
+    }
+
+    body .mobileNav #mySections {
+        padding: 0;
+        height: 0;
+        width: 115%;
+        background-color: #BBE7FF;
+    }
+
+    body .mobileNav #mySections ul {
+        padding-left: 40px;
+        margin: 0;
+        background-color: #BBE7FF;
+        list-style: star;
+    }
+
+    body .mobileNav #mySections ul li .active {
+        text-decoration: underline;
+        text-decoration-style: wavy;
+    }
 }
 
 

@@ -14,10 +14,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
-    <nav>
+    <nav class="mainNav">
         <div>
             <a href="index.html" class="headerLeft">Tania</a>
             <div class="headerRight">
@@ -26,6 +28,25 @@
                 <a class="active" href="patio_de_juegos.html">Patio de juegos</a>
                 <a href="contacto.html">Contacto</a>
             </div>
+        </div>
+    </nav>
+
+    <nav class="mobileNav">
+            <div class="header">
+                <a href="index.html" class="logo">Tania</a>
+                <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+                    <span class="material-symbols-outlined">
+                        menu
+                    </span>
+                </a>
+            </div>
+        <div id="mySections" style="display: none;">
+            <ul>
+                <li><a href="about.html">Sobre mí</a></li>
+                <li><a href="index.html#proyectos">Proyectos</a></li>
+                <li><a class="active" href="patio_de_juegos.html">Patio de juegos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
         </div>
     </nav>
 
@@ -67,6 +88,7 @@
     <script src="assets/javascript/Draggable.min.js"></script>
     <script src="assets/javascript/InertiaPlugin.min.js"></script>
     <script src="assets/javascript/patio_juegos.js"></script>
+    <script src="assets/javascript/nav.js"></script>
 </body>
 
 </html>
